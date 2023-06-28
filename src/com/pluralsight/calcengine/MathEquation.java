@@ -92,7 +92,6 @@ public class MathEquation {
         return symbol;
     }
 
-
     public double getLeftVal() { return leftVal; }
 
     public void setLeftVal(double leftVal) {this.leftVal = leftVal; }
