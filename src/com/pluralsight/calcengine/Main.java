@@ -68,6 +68,10 @@ public class Main {
         performOperation(parts);
     }
 
+    private static void handleCommandLine(String[] args) {
+        performOperation(args);
+    }
+
     private static void performOperation(String[] parts) {
         MathOperation opCode = MathOperation.valueOf(parts[0].toUpperCase());
         double leftVal = valueFromWord(parts[1]);
@@ -75,10 +79,6 @@ public class Main {
         MathEquation equation = new MathEquation(opCode, leftVal, rightVal);
         equation.execute();
         System.out.println(equation);
-    }
-
-    private static void handleCommandLine(String[] args) {
-        performOperation(args);
     }
 
      static double valueFromWord(String word) {
