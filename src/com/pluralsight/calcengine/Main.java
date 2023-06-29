@@ -21,7 +21,7 @@ public class Main {
             executeInteractive();
         // If there are 3 args, it do the calculation with the parameters passed.
         else if(args.length == 3)
-            handleCommandLine(args);
+            performOperation(args);
         else
             System.out.println("Please provide an operation and 2 numeric values");
     }
@@ -66,10 +66,6 @@ public class Main {
         String userInput = scanner.nextLine();
         String[] parts = userInput.split(" ");
         performOperation(parts);
-    }
-
-    private static void handleCommandLine(String[] args) {
-        performOperation(args);
     }
 
     private static void performOperation(String[] parts) {

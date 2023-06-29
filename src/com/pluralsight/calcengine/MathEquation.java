@@ -65,6 +65,7 @@ public class MathEquation {
         return sumOfResults / numberOfCalculations;
     }
 
+    @Override
     public String toString() {
         char symbol = opCode.getSymbol();
 
